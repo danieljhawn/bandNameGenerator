@@ -9,21 +9,25 @@
 //   fetch(`${api.url}`)
 // }
 
+// checkboxes
 var noun = document.getElementById("noun");
 var verb = document.getElementById("verb");
 var adjective = document.getElementById("adjective");
+var displayList = document.querySelector('#list');
+
 var bandName = "";
 var listOfNames = [];
 
+var firstWord = "walrus"
+var secondWord = "flamingo"
+
+// pick a random adjective or noun
 function randomAdjective() {
   return adjectives[Math.floor(Math.random() * adjectives.length)];
 }
 function randomNoun() {
   return nouns[Math.floor(Math.random() * nouns.length)];
 }
-
-var firstWord = "walrus"
-var secondWord = "flamingo"
 
 document.getElementById("generate").addEventListener("click", generateName)
 
@@ -38,4 +42,9 @@ function generateName() {
   document.getElementById("generatedName").innerText = bandName;
   listOfNames.push(bandName);
   console.log(listOfNames);
+
+  // add name to list of names generates
+  displayList.innerHTML = '<ul>' + listOfNames.map(function (name) {
+    return '<li>' + name + '<li>';
+  }).join('') + '</ul>';
 }
