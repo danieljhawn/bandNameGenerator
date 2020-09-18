@@ -8,7 +8,7 @@ const adjectives = [
   "Abrupt",
   "Acidic",
   "Adorable",
-  "adventurous",
+  "Adventurous",
   "Aggressive",
   "Agitated",
   "Alert",
