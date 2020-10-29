@@ -4,3 +4,30 @@
   text-decoration: none;
   list-style: none;
 }
+
+body {
+  text-align: center;
+}
+
+header {
+  height: 100px;
+  background-color: aqua;
+}
+
+.controls {
+  background-color: lightgreen;
+  text-align: center;
+  height: 50px;
+  padding: 20px;
+}
+
+.controls>input {
+  margin: 10px;
+}
+
+.generatedNames {
+  background-color: lightseagreen;
+  text-align: center;
+  height: 50px;
+  padding: 20px;
+}

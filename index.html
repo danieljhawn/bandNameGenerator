@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Band Name Generator</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <header>BAND NAME GENERATOR</header>
-  <input type="checkbox" name="adjective" id="adjective"> Add an adjective
-  <input type="checkbox" name="noun" id="noun">add a noun
+  <div class="controls">
+    <input type="checkbox" name="adjective" id="adjective"> Add an adjective
+    <input type="checkbox" name="noun" id="noun">add a noun
 
-  <input type="submit" value="GENERATE!" id="generate">
-
-  <h4 id="generatedName"><span id="first-word">Band</span> <span id="second-word">Name</span></h4><br>
-  <div id="list"></div>
+    <input type="submit" value="GENERATE!" id="generate">
+  </div>
+  <div class="generatedNames">
+    <h4 id="generatedName"><span id="first-word">Band</span> <span id="second-word">Name</span></h4><br>
+    <div id="list"></div>
+  </div>
 
   <script src="wordList.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>
