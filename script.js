@@ -18,8 +18,8 @@ var displayList = document.querySelector('#list');
 var bandName = "";
 var listOfNames = [];
 
-var firstWord = "walrus"
-var secondWord = "flamingo"
+var firstWord = ""
+var secondWord = ""
 
 // pick a random adjective or noun
 function randomAdjective() {
@@ -35,9 +35,15 @@ function generateName() {
   if (noun.checked == true && adjective.checked == true)  {
     firstWord = randomAdjective();
     secondWord = randomNoun();
-  };
+  } else if (noun.checked == true && adjective.checked == false) {
+    firstWord = randomAdjective();
+    secondWord = '';
+  } else if (noun.checked == false && adjective.checked == true) {
+    firstWord = randomNoun();
+    secondWord = '';
+  } else {alert("You must add at least one word")} ;
   
-  var bandName = (firstWord + " " + secondWord)
+  let bandName = (firstWord + " " + secondWord)
   console.log(bandName);
   document.getElementById("generatedName").innerText = bandName;
   listOfNames.push(bandName);
