@@ -10,16 +10,18 @@
 
 <body>
   <header>BAND NAME GENERATOR</header>
-  <div class="controls">
-    <input type="checkbox" name="adjective" id="adjective"> Add an adjective
-    <input type="checkbox" name="noun" id="noun">add a noun
-
-    <input type="submit" value="GENERATE!" id="generate">
+  <div class="generator">
+    <div class="controls">
+      <input type="checkbox" name="adjective" id="adjective"> Add an adjective
+      <input type="checkbox" name="noun" id="noun">add a noun
+      <input type="submit" value="GENERATE!" id="generate">
+      <h1 id="generatedName"><span id="first-word">Band</span> <span id="second-word">Name</span></h1><br>
+    </div>
+    <div class="generatedNames">
+      <div id="list"></div>
+    </div>
   </div>
-  <div class="generatedNames">
-    <h1 id="generatedName"><span id="first-word">Band</span> <span id="second-word">Name</span></h1><br>
-    <div id="list"></div>
-  </div>
+  
 
   <script src="wordList.js"></script>
   <script src="script.js"></script>
