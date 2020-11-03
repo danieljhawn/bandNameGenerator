@@ -1,9 +1,3 @@
-const test = [
-  "best", 
-  "testing", 
-  "testes",
-]
-
 const adjectives = [
   "Abrupt",
   "Acidic",

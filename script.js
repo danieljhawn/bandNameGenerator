@@ -36,10 +36,10 @@ function generateName() {
     firstWord = randomAdjective();
     secondWord = randomNoun();
   } else if (noun.checked == true && adjective.checked == false) {
-    firstWord = randomAdjective();
-    secondWord = '';
-  } else if (noun.checked == false && adjective.checked == true) {
     firstWord = randomNoun();
+    secondWord = '';
+  } else if (adjective.checked == true && noun.checked == false) {
+    firstWord = randomAdjective();
     secondWord = '';
   } else {alert("You must add at least one word")} ;
   
