@@ -12,12 +12,17 @@ body {
 header {
   height: 100px;
   background-color: aqua;
+  padding: 30px;
+  font-size: 45px;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
 }
 
 .controls {
   background-color: lightgreen;
   text-align: center;
-  height: 50px;
   padding: 20px;
   flex-basis: 0;
   flex-grow: 999;
@@ -31,13 +36,14 @@ header {
 .generator {
   display: flex;
   flex-wrap: wrap;
+  height: 100vh;
 }
 
 .generatedNames {
   background-color: lightseagreen;
   text-align: center;
-  height: 50px;
   padding: 20px;
   flex-basis: 20rem;
   flex-grow: 1;
+
 }
