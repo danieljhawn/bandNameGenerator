@@ -42,7 +42,7 @@ function generateName() {
   console.log(listOfNames);
 
   // add name to list of names generates
-  displayList.innerHTML = '<ul>' + listOfNames.map(function (name) {
+  displayList.innerHTML = '<ul>' + listOfNames.reverse().map(function (name) {
     return '<li>' + name + '<li>';
   }).join('') + '</ul>';
 }
