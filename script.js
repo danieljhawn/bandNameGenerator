@@ -38,11 +38,11 @@ function generateName() {
   let bandName = (firstWord + " " + secondWord)
   console.log(bandName);
   document.getElementById("generatedName").innerText = bandName;
-  listOfNames.push(bandName);
+  listOfNames.unshift(bandName);
   console.log(listOfNames);
 
   // add name to list of names generates
-  displayList.innerHTML = '<ul>' + listOfNames.reverse().map(function (name) {
+  displayList.innerHTML = '<ul>' + listOfNames.map(function (name) {
     return '<li>' + name + '<li>';
   }).join('') + '</ul>';
 }
