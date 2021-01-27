@@ -51,10 +51,13 @@ const adjectives = [
   "Murderous",
   "Blind",
   "Corrupt",
+  "Damaged"
 
 ]
 
 const nouns = [
+  "Damage",
+  "Brain",
   "Burden",
   "Rage",
   "Blotter",

@@ -32,16 +32,8 @@ function randomNoun() {
 document.getElementById("generate").addEventListener("click", generateName)
 
 function generateName() {
-  if (noun.checked == true && adjective.checked == true)  {
-    firstWord = randomAdjective();
-    secondWord = randomNoun();
-  } else if (noun.checked == true && adjective.checked == false) {
-    firstWord = randomNoun();
-    secondWord = '';
-  } else if (adjective.checked == true && noun.checked == false) {
-    firstWord = randomAdjective();
-    secondWord = '';
-  } else {alert("You must add at least one word")} ;
+  firstWord = randomAdjective();
+  secondWord = randomNoun();
   
   let bandName = (firstWord + " " + secondWord)
   console.log(bandName);

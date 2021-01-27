@@ -1,3 +1,12 @@
+@font-face {
+  font-family: Bebas;
+  src: url(Bebas.ttf);
+}
+
+html {
+  font-family: 'Bebas';
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,43 +16,40 @@
 
 body {
   text-align: center;
+  color: aliceblue;
 }
 
 header {
-  height: 100px;
-  background-color: aqua;
+  height: 10%;
+  background-color: rgb(27, 27, 27);
   padding: 30px;
-  font-size: 45px;
+  font-size: 35px;
   display: flex;
   margin: auto;
   align-items: center;
   justify-content: center;
 }
 
+
+.generator {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* height: 100vh; */
+}
+
 .controls {
-  background-color: lightgreen;
+  background-color: rgb(66, 66, 66);
   text-align: center;
   padding: 20px;
-  flex-basis: 0;
-  flex-grow: 999;
-  min-width: 50%;
 }
 
 .controls>input {
   margin: 10px;
 }
 
-.generator {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100vh;
-}
-
 .generatedNames {
-  background-color: lightseagreen;
+  background-color: rgb(83, 83, 83);
   text-align: center;
   padding: 20px;
-  flex-basis: 20rem;
-  flex-grow: 1;
-
 }
